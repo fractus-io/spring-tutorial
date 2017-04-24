@@ -1,4 +1,4 @@
-package io.fractus.springframework.tutorial.di.helloworld;
+package io.fractus.springframework.tutorial.dependency.injection.helloworld;
 
 public class HelloWorld implements IHelloWorld {
 

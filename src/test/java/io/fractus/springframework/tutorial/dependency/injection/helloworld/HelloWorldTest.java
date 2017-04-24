@@ -1,6 +1,7 @@
-package io.fractus.springframework.tutorial.di.helloworld;
+package io.fractus.springframework.tutorial.dependency.injection.helloworld;
 
 import static org.junit.Assert.assertEquals;
+import io.fractus.springframework.tutorial.dependency.injection.helloworld.HelloWorld;
 
 import org.junit.BeforeClass;
 import org.junit.Test;

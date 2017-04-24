@@ -6,7 +6,7 @@
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="helloWorld" class="io.fractus.springframework.tutorial.di.helloworld.HelloWorld" >
+    <bean id="helloWorld" class="io.fractus.springframework.tutorial.dependency.injection.helloworld.HelloWorld" >
     </bean>
 
 </beans>
