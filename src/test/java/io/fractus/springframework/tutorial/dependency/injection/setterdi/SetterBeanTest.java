@@ -18,7 +18,7 @@ public class SetterBeanTest{
 	}
 	
 	@Test
-	public void testHelloWorld() {
+	public void testSetterBean() {
 		SetterBean setterBean = (SetterBean)BEAN_FACTORY.getBean("setterBean");
         assertEquals("value injected via setter", setterBean.getValueToInject());
 	}

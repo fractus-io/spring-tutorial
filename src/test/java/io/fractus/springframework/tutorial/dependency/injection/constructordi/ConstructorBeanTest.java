@@ -18,7 +18,7 @@ public class ConstructorBeanTest {
 	}
 	
 	@Test
-	public void testHelloWorld() {
+	public void testConstructorBean() {
 		ConstructorBean constructorBean = (ConstructorBean)BEAN_FACTORY.getBean("constructorBean");
         assertEquals("value injected via constructor", constructorBean.getValueToInject());
 	}
