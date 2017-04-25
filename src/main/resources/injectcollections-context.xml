@@ -1,0 +1,46 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+         
+   <bean id="myRef"  class="java.lang.String">
+   		<constructor-arg value="aString"/>
+   </bean>
+         
+   <bean id="injectCollections" class="io.fractus.springframework.tutorial.dependency.injection.injectcollections.InjectCollections">
+        <property name="map">
+            <map>
+                <entry key="someValue">
+                    <value>Hello World!</value>
+                </entry>
+                <entry key="someBean">
+                    <ref local="myRef"/>
+                </entry> 
+            </map>
+        </property>
+        
+        
+        <property name="props">
+            <props>
+                <prop key="firstKey">firstValue</prop>
+                <prop key="secondKey">secondValue</prop>
+            </props>
+        </property>
+        
+        
+        <property name="set">
+            <set>
+                <value>Hello World!</value>
+                <ref local="myRef"/>
+            </set>
+        </property>
+        
+        
+        <property name="list">
+            <list>
+                <value>Hello World!</value>
+				<ref local="myRef"/>				
+            </list>
+        </property> 
+    </bean>
+    
+ </beans>
+  
