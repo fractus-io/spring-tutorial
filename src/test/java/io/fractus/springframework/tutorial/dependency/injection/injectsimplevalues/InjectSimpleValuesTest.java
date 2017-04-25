@@ -21,7 +21,8 @@ public class InjectSimpleValuesTest {
 	public void testInjectSimpleValues() {
 		InjectSimpleValues injectSimpleValues = (InjectSimpleValues)BEAN_FACTORY.getBean("injectSimpleValues");
         assertEquals("Mon Apr 24 00:00:00 CEST 2017", injectSimpleValues.getDate().toString());
-        //assertEquals(9.99, injectSimpleValues.getHeight(), 0.0);
+        // to compare two float numbers is tricky due to float number precision, therefore we are using tolerance of the 0.02
+        assertEquals(9.99, injectSimpleValues.getHeight(), 0.02);
         assertEquals("dstar55", injectSimpleValues.getName());
         assertEquals(2017, injectSimpleValues.getYear());
         assertEquals(true, injectSimpleValues.isSpringFun());
