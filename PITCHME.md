@@ -29,7 +29,7 @@ Topics
 ### Spring History
 
 * Started 2002/2003 by Rod Johonson and Juergen Holler
-* Started as a framework developed around Rod Johnson’s book [Expert One-on-One J2EE Design and Development](https://www.amazon.com/Expert-One-One-Design-Development/dp/0764543857)
+* Started as a framework developed around Rod Johnson&#39;s book [Expert One-on-One J2EE Design and Development](https://www.amazon.com/Expert-One-One-Design-Development/dp/0764543857)
 * Spring 1.0 Released March 2004
 * ...
 * Spring 4.2.0 Released July 2015
@@ -60,7 +60,7 @@ Topics
 
 * Integration with persistence frameworks Hibernate, JDO and iBATIS
 * MVC web application framework, built on core Spring functionality, supporting many technologies for generating views, including JSP, FreeMarker, Velocity, Tiles, iText, and POI
-* Extensive aspect-oriented programming (AOP) 
+* Extensive aspect-oriented programming(AOP) 
 
 
 ---
@@ -71,7 +71,6 @@ Topics
   * The EJB component model is complex
   * EJB is designed for distributed, transactional applications. While all non-trivial applications are transactional, distribution should not be built into basic component model
   * J2EE applications are hard to unit test
-
 
 ---
 
@@ -118,5 +117,5 @@ Topics
 
 ### Overview of the Spring Framework
 
-http://docs.spring.io/spring/docs/current/spring-framework-reference/html/images/spring-overview.png.pagespeed.ce.XVe1noRCMt.png
+![](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/images/spring-overview.png.pagespeed.ce.XVe1noRCMt.png)
 
