@@ -89,6 +89,9 @@ Topics
 * Design to interfaces
 * Test-Driven Development (TDD)
 * POJO classes can be tested without being tied up with the framework
+
++++
+
 * Declarative programming through AOP
   * Integration with other technologies
   * EJB for J2EE
@@ -106,6 +109,9 @@ Topics
 * Aspect-Oriented Programming(AOP) framework
 * Data Access abstracion
 * JDBC simplification
+
++++
+
 * Transation Management
 * MVC web framework
 * Simplification for working with JNDI, JTA
@@ -154,7 +160,7 @@ Topics
 
 ---
 
-### Overview of the Spring Framework - MVP Package
+### Overview of the Spring Framework - MVC Package
 
 * Spring&#39;s MVC package provides a Model-View-Controller (MVC) implementation for web applications
 * Spring&#39;s MVC framework is not just any old implementation; it provides a clean separation between domain model code and web forms, and allows you to use all the other features of the Spring Framework
