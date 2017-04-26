@@ -20,7 +20,8 @@ public class InjectSimpleValuesTest {
 	@Test
 	public void testInjectSimpleValues() {
 		InjectSimpleValues injectSimpleValues = (InjectSimpleValues)BEAN_FACTORY.getBean("injectSimpleValues");
-        assertEquals("Mon Apr 24 00:00:00 CEST 2017", injectSimpleValues.getDate().toString());
+		
+        assertEquals("24-Apr-2017 00:00:00", injectSimpleValues.getDate().toLocaleString());
         // to compare two float numbers is tricky due to float number precision, therefore we are using tolerance of the 0.02
         assertEquals(9.99, injectSimpleValues.getHeight(), 0.02);
         assertEquals("dstar55", injectSimpleValues.getName());
