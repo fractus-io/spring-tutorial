@@ -119,3 +119,43 @@ Topics
 
 ![](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/images/spring-overview.png.pagespeed.ce.XVe1noRCMt.png)
 
+
+---
+
+### Overview of the Spring Framework - Core Package
+
+* Core package is the most fundamental part of the framework and provides the IoC and Dependency Injection features
+* The basic concept here is the BeanFactory, which provides a sophisticated implementation of the factory pattern which removes the need for programmatic singletons and allows you to decouple the configuration and specification of dependencies from your actual program logic
+
+
+---
+
+### Overview of the Spring Framework - DAO Package
+
+* The DAO package provides a JDBC-abstraction layer that removes the need to do tedious JDBC coding and parsing of database-vendor specific error codes
+* The JDBC package provides a way to do programmatic as well as declarative transaction management, not only for classes implementing special interfaces, but for all your POJOs (plain old Java objects)
+
+
+---
+
+### Overview of the Spring Framework - ORM Package
+
+* The ORM package provides integration layers for popular object-relational mapping APIs, including JPA, JDO, Hibernate, and iBatis.
+* Using the ORM package you can use all those O/R-mappers in combination with all the other features Spring offers, such as the simple declarative transaction management feature mentioned previously
+
+
+---
+
+### Overview of the Spring Framework - AOP Package
+
+* Spring&#39;s AOP package provides an AOP Alliance-compliant aspect-oriented programming implementation allowing you to define, for example, method-interceptors and pointcuts to cleanly decouple code implementing functionality that should logically speaking be separated
+* Using source-level metadata functionality you can also incorporate all kinds of behavioral information into your code
+
+
+---
+
+### Overview of the Spring Framework - MVP Package
+
+* Spring&#39;s MVC package provides a Model-View-Controller (MVC) implementation for web applications
+* Spring&#39;s MVC framework is not just any old implementation; it provides a clean separation between domain model code and web forms, and allows you to use all the other features of the Spring Framework
+
