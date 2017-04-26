@@ -2,6 +2,7 @@ package io.fractus.springframework.tutorial.dependency.injection.injectsimpleval
 
 import static org.junit.Assert.assertEquals;
 
+import java.text.SimpleDateFormat;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -21,7 +22,7 @@ public class InjectSimpleValuesTest {
 	public void testInjectSimpleValues() {
 		InjectSimpleValues injectSimpleValues = (InjectSimpleValues)BEAN_FACTORY.getBean("injectSimpleValues");
 		
-        assertEquals("24-Apr-2017 00:00:00", injectSimpleValues.getDate().toLocaleString());
+		assertEquals("2017-04-24", new SimpleDateFormat("yyyy-MM-dd").format(injectSimpleValues.getDate()));
         // to compare two float numbers is tricky due to float number precision, therefore we are using tolerance of the 0.02
         assertEquals(9.99, injectSimpleValues.getHeight(), 0.02);
         assertEquals("dstar55", injectSimpleValues.getName());
