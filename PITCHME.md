@@ -17,3 +17,5 @@
 
 ---?include=course/course1.0-spring-introduction.md
 
+---?include=course/course2.0-spring-di-basics.md
+
