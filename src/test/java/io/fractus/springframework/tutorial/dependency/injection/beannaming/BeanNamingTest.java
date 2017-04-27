@@ -19,7 +19,7 @@ public class BeanNamingTest {
 	}
 	
 	@Test
-	public void testBeanNamingTest() {		
+	public void testBeanNaming() {		
 		String s1 = (String)BEAN_FACTORY.getBean("name1");
 		String s2 = (String)BEAN_FACTORY.getBean("name2");
 		String s3 = (String)BEAN_FACTORY.getBean("name3");

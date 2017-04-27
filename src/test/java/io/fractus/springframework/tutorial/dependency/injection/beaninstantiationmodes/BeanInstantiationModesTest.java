@@ -18,7 +18,7 @@ public class BeanInstantiationModesTest {
 	}
 	
 	@Test
-	public void testBeanbeanInstantiationModesTest() {
+	public void testBeanbeanInstantiationModes() {
 		
         String firstSingleton = (String)BEAN_FACTORY.getBean("singleton");
         String secondSingleton = (String)BEAN_FACTORY.getBean("singleton");

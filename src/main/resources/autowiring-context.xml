@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+ 	<bean id="dependency"  class="io.fractus.springframework.tutorial.dependency.injection.autowiring.Dependency">
+    </bean>
+
+
+    <bean id="byName" autowire="byName" class="io.fractus.springframework.tutorial.dependency.injection.autowiring.AutowiringBean" >
+    </bean>
+
+    <bean id="byType" autowire="byType" class="io.fractus.springframework.tutorial.dependency.injection.autowiring.AutowiringBean" >
+    </bean>
+
+    <bean id="autodetect" autowire="autodetect" class="io.fractus.springframework.tutorial.dependency.injection.autowiring.AutowiringBean" >
+    </bean>
+
+    <bean id="constructor" autowire="constructor" class="io.fractus.springframework.tutorial.dependency.injection.autowiring.AutowiringBean" >
+    </bean>
+
+</beans>
