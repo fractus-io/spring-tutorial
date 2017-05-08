@@ -19,3 +19,4 @@
 
 ---?include=course/course2.0-spring-di-basics.md
 
+---?include=course/course2.1-spring-di-advanced.md
