@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="initDestroyBean" class="io.fractus.springframework.tutorial.dependency.injection.beanlifecycle.InitDestroyBean" init-method="init" destroy-method="destroy">
+        <property name="beanName" value="aName"></property>
+    </bean>
+
+
+    <bean id="initializingDisposableBean" class="io.fractus.springframework.tutorial.dependency.injection.beanlifecycle.InitializingDisposableBean" >
+        <property name="beanName" value="aName"></property>
+    </bean>
+
+
+    <bean id="beanNameAwareBean" class="io.fractus.springframework.tutorial.dependency.injection.beanlifecycle.BeanNameAwareBean" >
+    </bean>
+
+    <bean id="beanFactoryAwareBean" class="io.fractus.springframework.tutorial.dependency.injection.beanlifecycle.BeanFactoryAwareBean" >
+    	<property name="name" value="aName"></property>
+    </bean>
+
+    <bean id="beanFactoryPostProcessorBean" class="io.fractus.springframework.tutorial.dependency.injection.beanlifecycle.BeanFactoryPostProcessorBean" >
+    	<property name="name" value="aName"></property>
+    </bean>
+
+
+    <bean id="beanPostProcessorBean" class="io.fractus.springframework.tutorial.dependency.injection.beanlifecycle.BeanPostProcessorBean" >
+    	<property name="name" value="aName"></property>
+    </bean> 
+
+
+</beans>
