@@ -22,9 +22,7 @@ public class BeanPostProcessorBeanTest {
 
 		BeanPostProcessorBean beanPostProcessorBean = (BeanPostProcessorBean)BEAN_FACTORY.getBean("beanPostProcessorBean");		
 		
-		//assertEquals("theName", beanFactoryPostProcessorBean.getName());
-		
-		BEAN_FACTORY.destroy();
-		
+		assertEquals("aName", beanPostProcessorBean.getName());
+						
 	}	
 }

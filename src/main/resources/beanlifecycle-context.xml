@@ -29,8 +29,11 @@
     </bean>
 
 
-    <bean id="beanPostProcessorBean" class="io.fractus.springframework.tutorial.dependency.injection.beanlifecycle.BeanPostProcessorBean" >
+    <bean id="beanPostProcessorBean" class="io.fractus.springframework.tutorial.dependency.injection.beanlifecycle.BeanPostProcessorBean" init-method="init">
     	<property name="name" value="aName"></property>
+    </bean>
+
+    <bean id="myBeanPostProcessor" class="io.fractus.springframework.tutorial.dependency.injection.beanlifecycle.MyBeanPostProcessor" >
     </bean> 
 
 
