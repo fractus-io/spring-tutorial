@@ -5,7 +5,7 @@ public class BeanPostProcessorBean {
 	private String name;
 
 	public void init(){
-		System.out.println("init");
+		
 	}
 
 	public String getName() {
