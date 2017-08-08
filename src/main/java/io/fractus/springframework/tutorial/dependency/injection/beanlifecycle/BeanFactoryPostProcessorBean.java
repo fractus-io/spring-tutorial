@@ -18,17 +18,15 @@ public class BeanFactoryPostProcessorBean implements BeanFactoryPostProcessor {
 		this.name = name;
 	}
 	
+	//  modifying Spring context’s bean definitions by adding property name to the bean definition 
 	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
 
 		 BeanDefinitionRegistry beanDefinitionRegistry = (BeanDefinitionRegistry)beanFactory;
-
+		 
 		 beanDefinitionRegistry.registerBeanDefinition("beanFactoryPostProcessorBean", 
 				 BeanDefinitionBuilder
 				 .genericBeanDefinition(BeanFactoryPostProcessorBean.class)
 				 .addPropertyValue("name", "theName")
 				 .getBeanDefinition());
-
 	}
-
-	
 }
