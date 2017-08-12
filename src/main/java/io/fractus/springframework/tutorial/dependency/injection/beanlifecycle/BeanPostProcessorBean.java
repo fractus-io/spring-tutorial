@@ -3,12 +3,32 @@ package io.fractus.springframework.tutorial.dependency.injection.beanlifecycle;
 public class BeanPostProcessorBean {
 
 	private String name;
-
+	private String beforeInitialization;
+	private String afterInitialization;
+	
 	public void init(){
-		
 	}
 
-	public String getName() {
+	public String getBeforeInitialization() {
+    return beforeInitialization;
+  }
+
+  public void setBeforeInitialization(String beforeInitialization) {
+    this.beforeInitialization = beforeInitialization;
+  }
+
+
+  public String getAfterInitialization() {
+    return afterInitialization;
+  }
+
+
+  public void setAfterInitialization(String afterInitialization) {
+    this.afterInitialization = afterInitialization;
+  }
+
+
+  public String getName() {
 		return name;
 	}
 

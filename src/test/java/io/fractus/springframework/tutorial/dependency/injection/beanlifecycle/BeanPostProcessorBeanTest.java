@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class BeanPostProcessorBeanTest {
@@ -20,9 +19,10 @@ public class BeanPostProcessorBeanTest {
 	@Test
 	public void testBeanPostProcessorBean() {		
 
-		BeanPostProcessorBean beanPostProcessorBean = (BeanPostProcessorBean)BEAN_FACTORY.getBean("beanPostProcessorBean");		
-		
+	  BeanPostProcessorBean beanPostProcessorBean = (BeanPostProcessorBean)BEAN_FACTORY.getBean("beanPostProcessorBean");
+		assertEquals("beforeInitialization", beanPostProcessorBean.getBeforeInitialization());
 		assertEquals("aName", beanPostProcessorBean.getName());
+		assertEquals("afterInitialization", beanPostProcessorBean.getAfterInitialization());
 						
 	}	
 }
